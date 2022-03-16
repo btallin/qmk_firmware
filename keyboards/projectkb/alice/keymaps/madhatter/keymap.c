@@ -77,3 +77,11 @@ bool led_update_user(led_t usb_led) {
     writePin(A2, !bottom);
     return false;
 }
+
+void keyboard_post_init_user(void) {
+  // Customise these values to desired behaviour
+  debug_enable=true;
+  debug_matrix=true;
+  debug_keyboard=true;
+  //debug_mouse=true;
+}
